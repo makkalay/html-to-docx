@@ -3,4 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   telemetry: false,
+  nitro: {
+    serverAssets: [{
+      baseName: 'templates',
+      dir: './server/templates'  // './templates'
+    }],
+  },
 })
